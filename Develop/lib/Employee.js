@@ -16,16 +16,16 @@ class Employee {
         this.email = email;
     }
     getName(){
-
+        return name
     }
     getId(){
-
+        return id
     }
     getEmail(){
-
+        return email
     }
     getRole(){
-        
+        return "Employee"
     }
 }
 
