@@ -15,17 +15,16 @@ class Intern extends Employee {
         if (!school) {
             throw new Error("You are missing the school.");
         }
-        this.id = id;
-        this.name = name;
-        this.email = email;
+        super (name, id, email);
         this.school = school;
     }
     getSchool() {
-        return school
+        return this.school
     }
     getRole() {
-        return "Inter"
+        return "Intern"
     }
 
 }
 
+module.exports = Intern;

@@ -15,9 +15,7 @@ class Manager extends Employee {
         if (!officeNumber) {
             throw new Error("You are missing the officeNumber.");
         }
-        this.id = id;
-        this.name = name;
-        this.email = email;
+        super (name, id, email);
         this.officeNumber = officeNumber;
     }
 
@@ -25,5 +23,9 @@ class Manager extends Employee {
         return "Manager"
     }
 
+    getOfficeNumber() {
+        return this.officeNumber;
+    }
 }
 
+module.exports = Manager;

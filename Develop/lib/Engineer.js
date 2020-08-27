@@ -15,15 +15,13 @@ class Engineer extends Employee {
         if (!github) {
             throw new Error("You are missing the github.");
         }
-        this.id = id;
-        this.name = name;
-        this.email = email;
+        super (name, id, email);
         this.github = github;
     }
 
 
     getGithub() {
-        return github
+        return this.github
     }
 
     getRole() {
@@ -32,3 +30,4 @@ class Engineer extends Employee {
 
 }
 
+module.exports = Engineer;
